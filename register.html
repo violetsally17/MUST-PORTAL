@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="page-container">
+        <!-- Main Register Card -->
+        <div class="card" style="margin-top: 40px;">
+            <!-- Close Button -->
+            <a href="index.html" class="close-btn" style="text-decoration: none;">
+                <i class="fa-solid fa-xmark"></i>
+            </a>
+
+            <h2>Create Account</h2>
+            <p class="subtitle">Provide your details to receive a temporary password.</p>
+
+            <form action="#" method="POST">
+                <!-- Surname Field -->
+                <div class="form-group">
+                    <label for="surname">Surname</label>
+                    <div class="input-wrapper">
+                        <i class="fa-regular fa-user input-icon-left"></i>
+                        <input type="text" id="surname" placeholder="Surname" required>
+                    </div>
+                </div>
+
+                <!-- Other Names Field -->
+                <div class="form-group">
+                    <label for="othernames">Other Names</label>
+                    <div class="input-wrapper">
+                        <i class="fa-solid fa-user-group input-icon-left"></i>
+                        <input type="text" id="othernames" placeholder="Other names" required>
+                    </div>
+                </div>
+
+                <!-- Phone Number Field -->
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <div class="phone-input-group">
+                        <select class="country-select">
+                            <option value="+256">Uganda (+256)</option>
+                        </select>
+                        <div class="input-wrapper" style="flex: 1;">
+                            <i class="fa-solid fa-phone input-icon-left"></i>
+                            <input type="tel" id="phone" placeholder="0770000000" required>
+                        </div>
+                    </div>
+                    <span class="helper-text">Use an active phone number to receive notifications.</span>
+                </div>
+
+                <!-- Email Field -->
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <div class="input-wrapper">
+                        <i class="fa-regular fa-envelope input-icon-left"></i>
+                        <input type="email" id="email" placeholder="myemail@gmail.com" required>
+                    </div>
+                </div>
+
+                <!-- Email Helper Link -->
+                <div class="text-right" style="margin-top: -10px; margin-bottom: 20px;">
+                    <a href="#" class="blue-link">Don't have an Email? Click to create <i class="fa-solid fa-circle-arrow-right"></i></a>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="action-row">
+                    <a href="index.html" class="btn btn-outline" style="text-decoration: none;">
+                        Close
+                    </a>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fa-solid fa-user-plus"></i> Create Account
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

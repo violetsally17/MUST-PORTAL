@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUST Online Application Portal - Login</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="page-container">
+        <!-- Header Pill -->
+        <img src="mustLogo.png" alt="MUST LOGO" class="portal-logo">
+        <div class="portal-header">
+            MUST Online Application Portal
+        </div>
+
+        <!-- Main Login Card -->
+        <div class="card">
+            <h2>Welcome Back</h2>
+            <p class="subtitle">Log in to access your application dashboard</p>
+
+            <form action="#" method="POST">
+                <!-- Email Field -->
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <div class="input-wrapper">
+                        <i class="fa-regular fa-envelope input-icon-left"></i>
+                        <input type="email" id="email" placeholder="name@example.com" required>
+                    </div>
+                </div>
+
+                <!-- Password Field -->
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <div class="input-wrapper">
+                        <i class="fa-solid fa-lock input-icon-left"></i>
+                        <input type="password" id="password" placeholder="Enter your password" required>
+                        <i class="fa-regular fa-eye input-icon-right"></i>
+                    </div>
+                </div>
+
+                <!-- Sign In Button -->
+                <button type="submit" class="btn btn-primary">
+                    <i class="fa-solid fa-arrow-right-to-bracket"></i> Sign In
+                </button>
+
+                <!-- Forgot Password Link -->
+                <a href="#" class="link-text">
+                    <i class="fa-solid fa-key"></i> Forgot your password?
+                </a>
+            </form>
+
+            <!-- Divider -->
+            <div class="divider">New to the portal?</div>
+
+            <!-- Bottom Action Buttons -->
+            <div class="action-row">
+                <a href="register.html" class="btn btn-outline-blue" style="text-decoration: none;">
+                    <i class="fa-solid fa-user-plus"></i> Create Account
+                </a>
+                <button type="button" class="btn btn-outline">
+                    <i class="fa-regular fa-circle-question"></i> How to Apply
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chat Widget Overlay -->
+    <div class="chat-widget">
+        <div>
+            <strong>Hello!</strong> I am M... assistant.<br>How can I help?
+        </div>
+    </div>
+
+</body>
+</html>
